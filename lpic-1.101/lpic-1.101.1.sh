@@ -9,8 +9,11 @@ cd /home/paul
 cd ~
 pwd
 echo Hello, World!
-time pwd    # tells you how long the system took to execute the pwd command.
+time pwd    # Tells you how long the system took to execute the pwd command.
 # Three times are displayed: total execution time (aka real time), user CPU time, and system CPU time.
-
 set
-
+logout
+exit
+type pwd; type cd; type bash
+type -a ls; type -a pwd # Displays duplicate commands and aliases
+# root’s path should never include the current directory (./). Placing this directory in root’s path makes it possible for a local troublemaker to trick root into running replacements for common programs. Omitting the current directory from ordinary user paths is also generally a good idea.
