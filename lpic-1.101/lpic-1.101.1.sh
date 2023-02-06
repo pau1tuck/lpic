@@ -28,6 +28,10 @@ env
 man ls
 man -k "some keywords to remind me of the command"
 info ls # You need to install this program
+help export, help ls
 
-
+echo $PATH 1 > path.txt # Redirection
+cat path.txt
+echo $PATH | tee -a path.txt # Display and pipeline to a text file (-a=append)
+find / -user paul | xargs -d "\n" rm # Remove multiple files using xargs
 
